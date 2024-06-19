@@ -12,54 +12,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	vertical-align:baseline;
 }
 
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section
-{
-	display:block;
-}
-
-body
-{
-	line-height:1;
-}
-
-ol,ul
-{
-	list-style:none;
-}
-
-blockquote,q
-{
-	quotes:none;
-}
-
-blockquote:before,blockquote:after,q:before,q:after
-{
-	content:'';
-	content:none;
-}
-
-table
-{
-	border-collapse:collapse;
-	border-spacing:0;
-}
-	
-body
-{
-	-webkit-text-size-adjust:none
-}
-
-/* Box Model */
-
-*, *:before, *:after {
-	-moz-box-sizing: border-box;
-	-webkit-box-sizing: border-box;
-	-o-box-sizing: border-box;
-	-ms-box-sizing: border-box;
-	box-sizing: border-box;
-}
-
-
 /*********************************************************************************/
 /* Basic                                                                         */
 /*********************************************************************************/
@@ -78,7 +30,7 @@ body
 
 	body,input,textarea,select
 	{
-		font-family: 'Roboto', sans-serif;
+		font-family: sans-serif;
 		font-size: 11pt;
 		font-weight: 300;
 		line-height: 1.75em;
@@ -123,28 +75,6 @@ body
 	{
 		text-decoration: underline;
 	}
-
-	sub
-	{
-		position: relative;
-		top: 0.5em;
-		font-size: 0.8em;
-	}
-	
-	sup
-	{
-		position: relative;
-		top: -0.5em;
-		font-size: 0.8em;
-	}
-	
-	hr
-	{
-		border: 0;
-		border-top: solid 1px #ddd;
-		margin: 6em 0 0 0;
-		padding: 6em 0 0 0;
-	}
 	
 	blockquote
 	{
@@ -168,22 +98,13 @@ body
 			display: block;
 			margin: 1.5em 0 0 0;
 			padding: 0 0 0.5em 0;
+			font-size: 1.7em;
 		}
 
 		header h2
 		{
 			font-size: 3.4em;
 		}
-
-		header .byline
-		{
-			font-size: 1.7em;
-		}
-		
-	footer
-	{
-		margin-top: 1em;
-	}
 
 	/* Container */
 
@@ -292,64 +213,6 @@ body
 				margin-bottom: 2em;
 			}
 
-	/* Lists */
-
-		ul.default
-		{
-			margin: 0;
-			padding: 0em 0em 1.5em 0em;
-			list-style: none;
-		}
-		
-			ul.default li
-			{
-				padding: 0.60em 0em;
-				font-size: 0.95em;
-				border-top: 1px solid;
-				border-color: rgba(0,0,0,.1);
-			}		
-		
-			ul.default li:first-child
-			{
-				padding-top: 0;
-				border-top: none;
-			}
-		
-		ul.style li {
-			margin: 0;
-			padding: 2em 0em 1.5em 0em;
-			border-top: 1px solid;
-			border-color: rgba(0,0,0,.1);
-		}
-		
-		ul.style li:first-child
-		{
-			padding-top: 0;
-			border-top: none;
-		}
-		
-		ul.style img {
-			float: left;
-			margin-right: 20px;
-		}
-		
-		ul.style a {
-			color: #434343;
-		}
-		
-		ul.style .posted {
-			padding: 0em 0em 1em 0em;
-			letter-spacing: 1px;
-			text-transform: uppercase;
-			font-size: 8pt;
-			color: #A2A2A2;
-		}
-		
-		ul.style .first {
-			padding-top: 0px;
-			border-top: none;
-		}
-
 /*********************************************************************************/
 /* Header                                                                        */
 /*********************************************************************************/
@@ -373,6 +236,51 @@ body
 			width: 100%;
 			height: 100%;
 			background: rgba(64,64,64,0.125);
+		}
+
+/*********************************************************************************/
+/* Nav                                                                           */
+/*********************************************************************************/
+
+	#nav-wrapper
+	{
+		background: rgba(0,0,0,.1);
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+
+	#nav > ul
+	{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+
+	#nav > ul > li
+	{
+		display: inline-block;
+		border-right: 1px solid;
+		border-color: rgba(255,255,255,.1);
+	}
+
+		#nav > ul > li:last-child
+		{
+			padding-right: 0;
+			border-right: none;
+		}
+
+		#nav > ul > li > a
+		{
+			display: inline-block;
+			padding: 1.5em 1.5em;
+			letter-spacing: 0.06em;
+			text-decoration: none;
+			text-transform: uppercase;
+			font-size: 1.1em;
+			outline: 0;
+			color: #FFF;
 		}
 
 /*********************************************************************************/
@@ -412,61 +320,28 @@ body
 		}
 
 /*********************************************************************************/
-/* Nav                                                                           */
+/* Featured                                                                      */
 /*********************************************************************************/
-
-	#nav-wrapper
-	{
-		background: rgba(0,0,0,.1);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-	}
 	
-	#nav > ul
+	#featured
 	{
-		margin: 0;
-		padding: 0;
+		position: relative;
+		background: #f2f2f2;
 		text-align: center;
+		padding: 6em 0em;
 	}
 
-	#nav > ul > li
+	#featured header
 	{
-		display: inline-block;
-		border-right: 1px solid;
-		border-color: rgba(255,255,255,.1);
+		margin-bottom: 3em;
 	}
-	
-		#nav > ul > li:last-child
-		{
-			padding-right: 0;
-			border-right: none;
-		}
 
-		#nav > ul > li > a,
-		#nav > ul > li > span
-		{
-			display: inline-block;
-			padding: 1.5em 1.5em;
-			letter-spacing: 0.06em;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 1.1em;
-			outline: 0;
-			color: #FFF;
-		}
+	#featured p
+	{
+		line-height: 2em;
+		font-size: 1.2em;
+	}
 
-		#nav li.active a
-		{
-			color: #FFF;
-		}
-
-		#nav > ul > li > ul
-		{
-			display: none;
-		}
-	
 /*********************************************************************************/
 /* Main                                                                          */
 /*********************************************************************************/
@@ -489,12 +364,50 @@ body
 		font-size: 2.2em;
 	}
 
-	#sidebar h2
+/*********************************************************************************/
+/* Tweet                                                                         */
+/*********************************************************************************/
+
+	#tweet
 	{
-		display: block;
-		padding-bottom: 0.50em;
-		font-size: 2.4em;
+		position: relative;
+		text-align: center;
+		background: url(./images/LumbridgeFar.png) no-repeat center center;
+		background-attachment: fixed;
+		background-size: cover;
+		padding: 6em 0em;
 	}
+
+		#tweet:before
+		{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(64,64,64,0.5);
+		}
+
+		#tweet section
+		{
+			border-top: 1px solid;
+			border-bottom: 1px solid;
+			border-color: rgba(255,255,255,.1);
+		}
+
+		#tweet blockquote
+		{
+			position: relative;
+			border: none;
+			margin: 0;
+			font-weight: 300;
+			color: rgba(255,255,255,.6);
+			margin: 0;
+			padding: 1em 4em;
+			line-height: 1.5em;
+			font-size: 1.8em;
+		}
 
 /*********************************************************************************/
 /* Footer                                                                        */
@@ -520,116 +433,10 @@ body
 /*********************************************************************************/
 /* Copyright                                                                     */
 /*********************************************************************************/
-	
-	#copyright
-	{
-		position: relative;
-		text-align: center;
-		color: #774535;
-	}
-	
-	#copyright .container
-	{
-		padding: 3em 0em;
-		border-top: 1px solid;
-		border-color: rgba(255,255,255,.05);
-		color:  rgba(255,255,255,.1);
-	}
-	
-	#copyright a
-	{
-		text-decoration: none;
-		color:  rgba(255,255,255,.2);
-	}
 
-	.copyright{
+	#copyright{
 		width: 100%;
 		text-align: center;
 		margin-top:15px;
 		margin-bottom:15px;
 	}
-/*********************************************************************************/
-/* Featured                                                                      */
-/*********************************************************************************/
-	
-	#featured
-	{
-		position: relative;
-		background: #f2f2f2;
-		text-align: center;
-		padding: 6em 0em;
-	}
-	
-	#featured h3
-	{
-		display: block;
-		font-weight: 300;
-		padding: 1.5em 0em;
-		font-size: 1.6em;
-	}
-
-	#featured header
-	{
-		margin-bottom: 3em;
-	}
-
-	#featured .pennant
-	{
-		font-size: 4em;
-	}
-	
-	#featured .button
-	{
-		margin-top: 1.5em;
-	}
-
-	#featured p
-	{
-		line-height: 2em;
-		font-size: 1.2em;
-	}
-
-/*********************************************************************************/
-/* Tweet                                                                         */
-/*********************************************************************************/
-	
-	#tweet
-	{
-		position: relative;
-		text-align: center;
-		background: url(./images/LumbridgeFar.png) no-repeat center center;
-		background-attachment: fixed;
-		background-size: cover;
-		padding: 6em 0em;
-	}
-
-		#tweet:before
-		{
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(64,64,64,0.5);
-		}
-	
-		#tweet section
-		{
-			border-top: 1px solid;
-			border-bottom: 1px solid;
-			border-color: rgba(255,255,255,.1);
-		}
-
-		#tweet blockquote
-		{
-			position: relative;
-			border: none;
-			margin: 0;
-			font-weight: 300;
-			color: rgba(255,255,255,.6);
-			margin: 0;
-			padding: 1em 4em;
-			line-height: 1.5em;
-			font-size: 1.8em;
-		}	
