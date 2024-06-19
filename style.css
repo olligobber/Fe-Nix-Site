@@ -198,13 +198,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 				width: 100%;
 				object-fit: cover;
 			}
-
-			.image.featured
-			{
-				display: block;
-				width: 100%;
-				margin: 0 0 2em 0;
-			}
 			
 			.image.full
 			{
@@ -224,9 +217,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		background-attachment: fixed;
 		background-size: cover;
 		text-align: center;
-		padding: 16em 0 12em 0;
 	}
-	
+
 		#header:before
 		{
 			content: '';
@@ -242,36 +234,37 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Nav                                                                           */
 /*********************************************************************************/
 
-	#nav-wrapper
+	nav
 	{
 		background: rgba(0,0,0,.1);
-		position: absolute;
+		position: relative;
+		z-index: 1;
 		top: 0;
 		left: 0;
 		width: 100%;
 	}
 
-	#nav > ul
+	nav > ul
 	{
 		margin: 0;
 		padding: 0;
 		text-align: center;
 	}
 
-	#nav > ul > li
+	nav > ul > li
 	{
 		display: inline-block;
 		border-right: 1px solid;
 		border-color: rgba(255,255,255,.1);
 	}
 
-		#nav > ul > li:last-child
+		nav > ul > li:last-child
 		{
 			padding-right: 0;
 			border-right: none;
 		}
 
-		#nav > ul > li > a
+		nav > ul > li > a
 		{
 			display: inline-block;
 			padding: 1.5em 1.5em;
@@ -287,15 +280,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Logo                                                                          */
 /*********************************************************************************/
 
-@media only screen and (max-width: 480px) {
 	#logo
 	{
-		padding-top: 150px;
-	}
-}
-
-	#logo
-	{
+		padding: 11em 0 11em 0;
 		position: relative;
 		z-index: 1;
 	}
@@ -346,29 +333,25 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Main                                                                          */
 /*********************************************************************************/
 
-	#main
+	main
 	{
 		position: relative;
 		background: #fff;
 		padding: 6em 0em;
-	}
-	
-	body #content
-	{
 		text-align: center;
 	}
 
-	body #content header h2
+	main header h2
 	{
 		padding: 0.70em 0em;
 		font-size: 2.2em;
 	}
 
 /*********************************************************************************/
-/* Tweet                                                                         */
+/* Quote                                                                         */
 /*********************************************************************************/
 
-	#tweet
+	#quote
 	{
 		position: relative;
 		text-align: center;
@@ -378,7 +361,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 		padding: 6em 0em;
 	}
 
-		#tweet:before
+		#quote:before
 		{
 			content: '';
 			position: absolute;
@@ -389,14 +372,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 			background: rgba(64,64,64,0.5);
 		}
 
-		#tweet section
+		#quote section
 		{
 			border-top: 1px solid;
 			border-bottom: 1px solid;
 			border-color: rgba(255,255,255,.1);
 		}
 
-		#tweet blockquote
+		#quote blockquote
 		{
 			position: relative;
 			border: none;
@@ -413,19 +396,19 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 /* Footer                                                                        */
 /*********************************************************************************/
 	
-	#footer
+	footer
 	{
 		position: relative;
 		text-align: center;
 		padding: 6em 0em;
 	}
 	
-	#footer header h2
+	footer header h2
 	{
 		color: #FFF !important;
 	}
 	
-	#footer header .byline
+	footer header .byline
 	{
 		color: rgba(255,255,255,.2);
 	}
