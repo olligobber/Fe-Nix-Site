@@ -42,24 +42,24 @@
 		font-weight: 300;
 		color: #777;
 	}
-	
-		h2
-		{
-			letter-spacing: -0.025em;
-		}
-	
-		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
-		{
-			color: inherit;
-			text-decoration: none;
-		}
-		
+
+	h2
+	{
+		letter-spacing: -0.025em;
+	}
+
+	h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+	{
+		color: inherit;
+		text-decoration: none;
+	}
+
 	strong, b
 	{
 		font-weight: 500;
 		color: #000000;
 	}
-	
+
 	em, i
 	{
 		font-style: italic;
@@ -70,19 +70,19 @@
 		text-decoration: none;
 		color: #80BA8E;
 	}
-	
+
 	a:hover
 	{
 		text-decoration: underline;
 	}
-	
+
 	blockquote
 	{
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
-	
+
 	p, ul, ol, dl, table
 	{
 		margin-bottom: 1em;
@@ -93,22 +93,22 @@
 		margin-bottom: 1.6em;
 	}
 
-		header .byline
-		{
-			display: block;
-			margin: 1.5em 0 0 0;
-			padding: 0 0 0.5em 0;
-			font-size: 1.7em;
-		}
+	header .byline
+	{
+		display: block;
+		margin: 1.5em 0 0 0;
+		padding: 0 0 0.5em 0;
+		font-size: 1.7em;
+	}
 
-		header h2
-		{
-			font-size: 3.4em;
-		}
+	header h2
+	{
+		font-size: 3.4em;
+	}
 
 	/* Container */
 
-	.container 
+	.container
 	{
 		max-width: 1200px;
 		margin-left: auto;
@@ -117,7 +117,7 @@
 
 	/* Grid */
 
-	.grid 
+	.grid
 	{
 		display: flex;
 		flex-wrap: wrap;
@@ -125,20 +125,20 @@
 		gap: 50px 50px;
 	}
 
-		.grid section 
-		{
-			flex-basis: 575px;
-			margin-bottom: 0;
-		}
+	.grid section
+	{
+		flex-basis: 575px;
+		margin-bottom: 0;
+	}
 
 	/* Sections/Articles */
-	
+
 	section,
 	article
 	{
 		margin-bottom: 3em;
 	}
-	
+
 	section > :last-child,
 	article > :last-child
 	{
@@ -157,20 +157,20 @@
 	{
 		display: inline-block;
 	}
-	
-		.image img
-		{
-			display: block;
-			width: 100%;
-			object-fit: cover;
-		}
-		
-		.image.full
-		{
-			display: block;
-			width: 100%;
-			margin-bottom: 2em;
-		}
+
+	.image img
+	{
+		display: block;
+		width: 100%;
+		object-fit: cover;
+	}
+
+	.image.full
+	{
+		display: block;
+		width: 100%;
+		margin-bottom: 2em;
+	}
 
 /*********************************************************************************/
 /* Header                                                                        */
@@ -185,22 +185,22 @@
 		text-align: center;
 	}
 
-		#header:before
-		{
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(64,64,64,0.125);
-		}
+	#header:before
+	{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(64,64,64,0.125);
+	}
 
-		#header *
-		{
-			position: relative;
-			z-index: 1;
-		}
+	#header *
+	{
+		position: relative;
+		z-index: 1;
+	}
 
 /*********************************************************************************/
 /* Nav                                                                           */
@@ -208,7 +208,6 @@
 
 	nav
 	{
-		background: rgba(0,0,0,.1);
 		top: 0;
 		left: 0;
 		width: 100%;
@@ -216,35 +215,44 @@
 
 	nav > ul
 	{
+		display: flex;
+		gap: 3px;
 		margin: 0;
 		padding: 0;
-		text-align: center;
 	}
 
 	nav > ul > li
 	{
 		display: inline-block;
-		border-right: 1px solid;
-		border-color: rgba(255,255,255,.1);
+		background: rgba(0,0,0,.15);
+		color: #FFF;
 	}
 
-		nav > ul > li:last-child
-		{
-			padding-right: 0;
-			border-right: none;
-		}
+	nav > ul > li:first-child,
+	nav > ul > li:last-child
+	{
+		justify-self: stretch;
+		flex-grow: 1;
+	}
 
-		nav > ul > li > a
-		{
-			display: inline-block;
-			padding: 1.5em 1.5em;
-			letter-spacing: 0.06em;
-			text-decoration: none;
-			text-transform: uppercase;
-			font-size: 1.1em;
-			outline: 0;
-			color: #FFF;
-		}
+	nav > ul > li.here
+	{
+		background: rgba(0,0,0,0);
+		color: #000;
+		pointer-events: none;
+	}
+
+	nav > ul > li > a
+	{
+		display: inline-block;
+		padding: 1.5em 1.5em;
+		letter-spacing: 0.06em;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-size: 1.1em;
+		outline: 0;
+		color: inherit;
+	}
 
 /*********************************************************************************/
 /* Logo                                                                          */
@@ -254,30 +262,30 @@
 	{
 		padding: 11em 0 11em 0;
 	}
-	
-		#logo h1
-		{
-			color: #FFF;
-			display: block;
-			text-decoration: none;
-			font-weight: 300;
-			line-height: 1em;
-			font-size: 7em;
-			color: #FFF;
-			letter-spacing: -0.05em;
-			margin: 0 0 0.125em 0;
-		}
-		
-		#logo span
-		{
-			font-size: 1.4em;
-			color: #FFF;
-		}
+
+	#logo h1
+	{
+		color: #FFF;
+		display: block;
+		text-decoration: none;
+		font-weight: 300;
+		line-height: 1em;
+		font-size: 7em;
+		color: #FFF;
+		letter-spacing: -0.05em;
+		margin: 0 0 0.125em 0;
+	}
+
+	#logo span
+	{
+		font-size: 1.4em;
+		color: #FFF;
+	}
 
 /*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
-	
+
 	#featured
 	{
 		position: relative;
@@ -329,53 +337,53 @@
 		padding: 6em 0em;
 	}
 
-		#quote:before
-		{
-			content: '';
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100%;
-			background: rgba(64,64,64,0.5);
-		}
+	#quote:before
+	{
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(64,64,64,0.5);
+	}
 
-		#quote section
-		{
-			border-top: 1px solid;
-			border-bottom: 1px solid;
-			border-color: rgba(255,255,255,.1);
-		}
+	#quote section
+	{
+		border-top: 1px solid;
+		border-bottom: 1px solid;
+		border-color: rgba(255,255,255,.1);
+	}
 
-		#quote blockquote
-		{
-			position: relative;
-			border: none;
-			margin: 0;
-			font-weight: 300;
-			color: rgba(255,255,255,.6);
-			margin: 0;
-			padding: 1em 4em;
-			line-height: 1.5em;
-			font-size: 1.8em;
-		}
+	#quote blockquote
+	{
+		position: relative;
+		border: none;
+		margin: 0;
+		font-weight: 300;
+		color: rgba(255,255,255,.6);
+		margin: 0;
+		padding: 1em 4em;
+		line-height: 1.5em;
+		font-size: 1.8em;
+	}
 
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
-	
+
 	footer
 	{
 		position: relative;
 		text-align: center;
 		padding: 6em 0em;
 	}
-	
+
 	footer header h2
 	{
 		color: #FFF !important;
 	}
-	
+
 	footer header .byline
 	{
 		color: rgba(255,255,255,.2);
