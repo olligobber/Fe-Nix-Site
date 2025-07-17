@@ -68,7 +68,7 @@
 	a
 	{
 		text-decoration: none;
-		color: #80BA8E;
+		color: #0000ff;
 	}
 
 	a:hover
@@ -88,11 +88,6 @@
 		margin-bottom: 1em;
 	}
 
-	header
-	{
-		margin-bottom: 1.6em;
-	}
-
 	header .byline
 	{
 		display: block;
@@ -104,6 +99,11 @@
 	header h2
 	{
 		font-size: 3.4em;
+	}
+
+	header h3
+	{
+		font-size: 1.7em;
 	}
 
 	/* Container */
@@ -119,19 +119,38 @@
 
 	.grid
 	{
+		margin: 1em 0em;
+		text-align: center;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-around;
 		gap: 50px 50px;
 	}
 
+	.grid.loose
+	{
+		align-items: flex-end;
+	}
+
 	.grid section
 	{
-		flex-basis: 575px;
 		margin-bottom: 0;
 	}
 
+	.grid.half section
+	{
+		flex-basis: 575px;
+	}
+
 	/* Sections/Articles */
+
+	article
+	{
+		text-align: left;
+		max-width: 800px;
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	section,
 	article
@@ -261,12 +280,12 @@
 /* Logo                                                                          */
 /*********************************************************************************/
 
-	.biglogo
+	.logo.big
 	{
 		padding: 11em 0 11em 0;
 	}
 
-	.smalllogo
+	.logo.small
 	{
 		padding: 5em 0 5em 0;
 	}
@@ -302,7 +321,7 @@
 		position: relative;
 		background: #f2f2f2;
 		text-align: center;
-		padding: 6em 0em;
+		padding: 6em 0em 2em;
 	}
 
 	#featured header
@@ -324,7 +343,7 @@
 	{
 		position: relative;
 		background: #fff;
-		padding: 6em 0em;
+		padding: 1em 0em 3em;
 		text-align: center;
 	}
 
