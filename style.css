@@ -34,13 +34,13 @@
 		font-size: 11pt;
 		font-weight: 300;
 		line-height: 1.75em;
-		color: #777;
+		color: #444;
 	}
 
 	h1,h2,h3,h4,h5,h6
 	{
 		font-weight: 300;
-		color: #777;
+		color: #444;
 	}
 
 	h2
@@ -261,28 +261,36 @@
 /* Logo                                                                          */
 /*********************************************************************************/
 
-	#logo
+	.biglogo
 	{
 		padding: 11em 0 11em 0;
 	}
 
-	#logo h1
+	.smalllogo
+	{
+		padding: 5em 0 5em 0;
+	}
+
+	.logo *
 	{
 		color: #FFF;
+		text-shadow: 0 0 0.2em #000;
+	}
+
+	.logo h1
+	{
 		display: block;
 		text-decoration: none;
 		font-weight: 300;
 		line-height: 1em;
 		font-size: 7em;
-		color: #FFF;
 		letter-spacing: -0.05em;
 		margin: 0 0 0.125em 0;
 	}
 
-	#logo span
+	.logo span
 	{
 		font-size: 1.4em;
-		color: #FFF;
 	}
 
 /*********************************************************************************/
