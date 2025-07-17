@@ -1,5 +1,9 @@
 @charset 'UTF-8';
 
+/* Roboto font */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* Resets (http://meyerweb.com/eric/tools/css/reset/ | v2.0 | 20110126 | License: none (public domain)) */
 
 	html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
@@ -30,36 +34,36 @@
 
 	body,input,textarea,select
 	{
-		font-family: sans-serif;
+		font-family: "Roboto", sans-serif;
 		font-size: 11pt;
-		font-weight: 300;
+		font-weight: normal;
 		line-height: 1.75em;
 		color: #777;
 	}
 
 	h1,h2,h3,h4,h5,h6
 	{
-		font-weight: 300;
+		font-weight: normal;
 		color: #777;
 	}
-	
+
 		h2
 		{
 			letter-spacing: -0.025em;
 		}
-	
+
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 		{
 			color: inherit;
 			text-decoration: none;
 		}
-		
+
 	strong, b
 	{
 		font-weight: 500;
 		color: #000000;
 	}
-	
+
 	em, i
 	{
 		font-style: italic;
@@ -70,19 +74,19 @@
 		text-decoration: none;
 		color: #80BA8E;
 	}
-	
+
 	a:hover
 	{
 		text-decoration: underline;
 	}
-	
+
 	blockquote
 	{
 		border-left: solid 0.5em #ddd;
 		padding: 1em 0 1em 2em;
 		font-style: italic;
 	}
-	
+
 	p, ul, ol, dl, table
 	{
 		margin-bottom: 1em;
@@ -108,7 +112,7 @@
 
 	/* Container */
 
-	.container 
+	.container
 	{
 		max-width: 1200px;
 		margin-left: auto;
@@ -117,7 +121,7 @@
 
 	/* Grid */
 
-	.grid 
+	.grid
 	{
 		display: flex;
 		flex-wrap: wrap;
@@ -125,20 +129,20 @@
 		gap: 50px 50px;
 	}
 
-		.grid section 
+		.grid section
 		{
 			flex-basis: 575px;
 			margin-bottom: 0;
 		}
 
 	/* Sections/Articles */
-	
+
 	section,
 	article
 	{
 		margin-bottom: 3em;
 	}
-	
+
 	section > :last-child,
 	article > :last-child
 	{
@@ -157,14 +161,14 @@
 	{
 		display: inline-block;
 	}
-	
+
 		.image img
 		{
 			display: block;
 			width: 100%;
 			object-fit: cover;
 		}
-		
+
 		.image.full
 		{
 			display: block;
@@ -254,7 +258,7 @@
 	{
 		padding: 11em 0 11em 0;
 	}
-	
+
 		#logo h1
 		{
 			color: #FFF;
@@ -267,7 +271,7 @@
 			letter-spacing: -0.05em;
 			margin: 0 0 0.125em 0;
 		}
-		
+
 		#logo span
 		{
 			font-size: 1.4em;
@@ -277,7 +281,7 @@
 /*********************************************************************************/
 /* Featured                                                                      */
 /*********************************************************************************/
-	
+
 	#featured
 	{
 		position: relative;
@@ -363,19 +367,19 @@
 /*********************************************************************************/
 /* Footer                                                                        */
 /*********************************************************************************/
-	
+
 	footer
 	{
 		position: relative;
 		text-align: center;
 		padding: 6em 0em;
 	}
-	
+
 	footer header h2
 	{
 		color: #FFF !important;
 	}
-	
+
 	footer header .byline
 	{
 		color: rgba(255,255,255,.2);
