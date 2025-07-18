@@ -202,9 +202,11 @@
 	#header
 	{
 		position: relative;
-		background: url(./images/LumbridgeNear.png) no-repeat bottom center;
+		background-image: url(./images/LumbridgeNear.png);
+		background-repeat: no-repeat;
+		background-position: top center;
 		background-attachment: fixed;
-		background-size: cover;
+		background-size: auto inherit;
 		text-align: center;
 	}
 
@@ -365,9 +367,12 @@
 	{
 		position: relative;
 		text-align: center;
-		background: url(./images/LumbridgeFar.png) no-repeat center center;
+		background-color: #b9d6ff;
+		background-image: url(./images/LumbridgeFar.png);
+		background-repeat: no-repeat;
+		background-position: bottom center;
 		background-attachment: fixed;
-		background-size: cover;
+		background-size: 100% auto;
 		padding: 6em 0em;
 	}
 
