@@ -202,12 +202,18 @@
 	#header
 	{
 		position: relative;
+		background-color: #b9d6ff;
 		background-image: url(./images/LumbridgeNear.png);
 		background-repeat: no-repeat;
-		background-position: top center;
+		background-position: center 10em;
 		background-attachment: fixed;
-		background-size: auto inherit;
+		background-size: 100% auto;
 		text-align: center;
+	}
+
+	#header:has(.small)
+	{
+		background-position-y: 5em;
 	}
 
 	#header:before
@@ -425,7 +431,7 @@
 
 	footer header .byline
 	{
-		color: rgba(255,255,255,.2);
+		color: rgba(255,255,255,.3);
 	}
 
 /*********************************************************************************/
@@ -437,4 +443,9 @@
 		text-align: center;
 		margin-top:15px;
 		margin-bottom:15px;
+		color: rgba(255,255,255,.3);
+	}
+
+	#copyright a {
+		color: #5555ff
 	}
