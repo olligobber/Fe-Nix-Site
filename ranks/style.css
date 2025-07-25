@@ -1,0 +1,132 @@
+.rank
+{
+	min-height: 3em;
+	text-align: left;
+	padding-left: 4em;
+	margin-bottom: 1em;
+	background-size: auto 3em;
+	background-position: top left;
+	background-repeat: no-repeat;
+	image-rendering: pixelated;
+
+}
+
+.rank p
+{
+	margin-bottom: 0.5em;
+	line-height: 1.1;
+}
+
+.air
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Air_rune.png);
+}
+
+.water
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Water_rune.png);
+}
+
+.earth
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Earth_rune.png);
+}
+
+.fire
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Fire_rune.png);
+}
+
+.nature
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Nature_rune.png);
+}
+
+.death
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Death_rune.png);
+}
+
+.mind
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Mind_rune.png);
+}
+
+.soul
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Soul_rune.png);
+}
+
+.astral
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Astral_rune.png);
+}
+
+.cosmic
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Cosmic_rune.png);
+}
+
+.beast
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Beast.png);
+}
+
+@keyframes sotw
+{
+	/* 0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Attack_icon.png) }
+	6.67% { background-image: url(https://oldschool.runescape.wiki/images/Strength_icon.png) }
+	13.33% { background-image: url(https://oldschool.runescape.wiki/images/Defence_icon.png) }
+	20% { background-image: url(https://oldschool.runescape.wiki/images/Ranged_icon.png) }
+	26.67% { background-image: url(https://oldschool.runescape.wiki/images/Prayer_icon.png) }
+	33.33% { background-image: url(https://oldschool.runescape.wiki/images/Magic_icon.png) }
+	40% { background-image: url(https://oldschool.runescape.wiki/images/Runecraft_icon.png) }
+	46.67% { background-image: url(https://oldschool.runescape.wiki/images/Hitpoints_icon.png) }
+	53.33% { background-image: url(https://oldschool.runescape.wiki/images/Crafting_icon.png) }
+	60% { background-image: url(https://oldschool.runescape.wiki/images/Mining_icon.png) }
+	66.67% { background-image: url(https://oldschool.runescape.wiki/images/Smithing_icon.png) }
+	73.33% { background-image: url(https://oldschool.runescape.wiki/images/Fishing_icon.png) }
+	80% { background-image: url(https://oldschool.runescape.wiki/images/Cooking_icon.png) }
+	86.67% { background-image: url(https://oldschool.runescape.wiki/images/Firemaking_icon.png) }
+	93.33% { background-image: url(https://oldschool.runescape.wiki/images/Woodcutting_icon.png) } */
+	0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Attacker.png) }
+	6.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Enforcer.png) }
+	13.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Defender.png) }
+	20% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Ranger.png) }
+	26.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Priest.png) }
+	33.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Magician.png) }
+	40% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Runecrafter.png) }
+	46.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Medic.png) }
+	53.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Crafter.png) }
+	60% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Miner.png) }
+	66.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Smith.png) }
+	73.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Fisher.png) }
+	80% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Cook.png) }
+	86.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Firemaker.png) }
+	93.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Lumberjack.png) }
+}
+
+.sotw
+{
+	animation: sotw 5s infinite;
+}
+
+.alt
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Gnome_Child.png);
+}
+
+.friend
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Helper.png);
+}
+
+.warlock
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Warlock.png);
+}
+
+.dragonstone
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Dragonstone.png);
+}
