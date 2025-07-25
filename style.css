@@ -207,7 +207,7 @@
 		background-repeat: no-repeat;
 		background-position: center 10em;
 		background-attachment: fixed;
-		background-size: 100% auto;
+		background-size: max(100%, 110em) auto;
 		text-align: center;
 	}
 
