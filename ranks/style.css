@@ -74,21 +74,6 @@
 
 @keyframes sotw
 {
-	/* 0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Attack_icon.png) }
-	6.67% { background-image: url(https://oldschool.runescape.wiki/images/Strength_icon.png) }
-	13.33% { background-image: url(https://oldschool.runescape.wiki/images/Defence_icon.png) }
-	20% { background-image: url(https://oldschool.runescape.wiki/images/Ranged_icon.png) }
-	26.67% { background-image: url(https://oldschool.runescape.wiki/images/Prayer_icon.png) }
-	33.33% { background-image: url(https://oldschool.runescape.wiki/images/Magic_icon.png) }
-	40% { background-image: url(https://oldschool.runescape.wiki/images/Runecraft_icon.png) }
-	46.67% { background-image: url(https://oldschool.runescape.wiki/images/Hitpoints_icon.png) }
-	53.33% { background-image: url(https://oldschool.runescape.wiki/images/Crafting_icon.png) }
-	60% { background-image: url(https://oldschool.runescape.wiki/images/Mining_icon.png) }
-	66.67% { background-image: url(https://oldschool.runescape.wiki/images/Smithing_icon.png) }
-	73.33% { background-image: url(https://oldschool.runescape.wiki/images/Fishing_icon.png) }
-	80% { background-image: url(https://oldschool.runescape.wiki/images/Cooking_icon.png) }
-	86.67% { background-image: url(https://oldschool.runescape.wiki/images/Firemaking_icon.png) }
-	93.33% { background-image: url(https://oldschool.runescape.wiki/images/Woodcutting_icon.png) } */
 	0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Attacker.png) }
 	6.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Enforcer.png) }
 	13.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Defender.png) }
@@ -108,7 +93,7 @@
 
 .sotw
 {
-	animation: sotw 5s infinite;
+	animation: sotw 5s step-start infinite;
 }
 
 .alt
