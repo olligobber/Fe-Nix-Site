@@ -20,6 +20,11 @@
 /* Basic                                                                         */
 /*********************************************************************************/
 
+	html
+	{
+		scroll-behavior: smooth;
+	}
+
 	body
 	{
 		margin: 0;
@@ -172,6 +177,12 @@
 	article:last-child
 	{
 		margin-bottom: 0;
+	}
+
+	aside
+	{
+		text-align: left;
+		max-width: 300px;
 	}
 
 	/* Images */
@@ -354,16 +365,61 @@
 	main
 	{
 		position: relative;
+		margin-left: auto;
+		margin-right: auto;
 		background: #fff;
 		padding: 1em 0em 3em;
 		text-align: center;
 	}
 
-	main h2,
-	main header h2
+	main h2
 	{
 		padding: 0.70em 0em;
 		font-size: 2.2em;
+	}
+
+	main h3
+	{
+		padding: 0.50em 0em;
+		font-size: 1.8em;
+	}
+
+	/* Sidebar */
+
+	.sidebar
+	{
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: stretch;
+	}
+
+	.sidebar.right
+	{
+		flex-direction: row-reverse;
+	}
+
+	.sidebar.left
+	{
+		flex-direction: row;
+	}
+
+	.sidebar > *
+	{
+		margin-left: 0.2cm;
+		margin-right: 0.2cm;
+	}
+
+	.sidebar main
+	{
+		flex-shrink: 2;
+	}
+
+	.sidebar aside div
+	{
+		flex-shrink: 1;
+		position: sticky;
+		top: 1em;
 	}
 
 /*********************************************************************************/
