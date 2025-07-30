@@ -252,6 +252,7 @@
 	{
 		top: 0;
 		left: 0;
+		height: 10em;
 		width: 100%;
 		display: flex;
 		gap: 3px;
@@ -288,7 +289,7 @@
 	.navbox.here,
 	.subnavitem.here
 	{
-		background: rgba(0,0,0,0);
+		background: rgba(255,255,255,.15);
 		color: #000;
 	}
 
@@ -317,8 +318,6 @@
 		text-decoration: none;
 	}
 
-	/* Subnav */
-
 	.subnav
 	{
 		display: flex;
@@ -327,18 +326,17 @@
 		height: 0;
 		opacity: 0;
 		padding-top: 3px;
-		margin-bottom: -100%;
 		flex-direction: column;
 		gap: 3px;
-		transition: height 0ms 400ms, opacity 400ms 0ms;
+		transition: height 200ms, opacity 200ms;
 	}
 
 	.navitem:hover > .subnav,
-	.subnav:has(.subnavitem:hover)
+	.subnav:has(.here)
 	{
-		height: auto;
+		height: 5em;
 		opacity: 1;
-		transition: height 0ms 400ms, opacity 400ms 0ms;
+		transition: height 200ms, opacity 200ms;
 	}
 
 	.subnavitem
@@ -353,12 +351,12 @@
 
 	.logo.big
 	{
-		padding: 11em 0 11em 0;
+		padding: 6em 0 11em 0;
 	}
 
 	.logo.small
 	{
-		padding: 5em 0 5em 0;
+		padding: 0 0 5em 0;
 	}
 
 	.logo *
