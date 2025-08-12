@@ -418,9 +418,14 @@
 	.sidebar aside .pagenav
 	{
 		flex-shrink: 1;
+
 		position: sticky;
 		top: 1em;
+
 		max-height: 80vh;
+		background-color: #ddd;
+		padding: 1em;
+		border-radius: 1em;
 
 		display: flex;
 		flex-direction: column;
