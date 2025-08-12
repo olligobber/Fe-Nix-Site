@@ -469,11 +469,36 @@
 		flex-shrink: 2;
 	}
 
-	.sidebar aside div
+	.sidebar aside .pagenav
 	{
 		flex-shrink: 1;
+
 		position: sticky;
 		top: 1em;
+
+		max-height: 80vh;
+		background-color: #ddd;
+		padding: 1em;
+		border-radius: 1em;
+
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		align-items: stretch;
+		justify-content: flex-start;
+	}
+
+	.sidebar aside .pagenav > div
+	{
+		overflow-y: hidden;
+	}
+
+	@media (max-height: 500px)
+	{
+		.sidebar aside .pagenav > div
+		{
+			font-size: 2.8vh;
+		}
 	}
 
 /*********************************************************************************/
