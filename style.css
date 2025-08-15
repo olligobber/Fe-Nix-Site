@@ -32,7 +32,13 @@
 		background: #161616;
 	}
 
-	.image.fit img {
+	.linky:hover
+	{
+		cursor: pointer;
+	}
+
+	.image.fit img
+	{
 		width: 100%;
 		height: auto;
 	}
