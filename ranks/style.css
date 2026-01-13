@@ -17,6 +17,11 @@
 	line-height: 1.1;
 }
 
+.friend
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Helper.png);
+}
+
 .air
 {
 	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Air.png);
@@ -45,6 +50,11 @@
 .death
 {
 	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Death.png);
+}
+
+.law
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Law.png);
 }
 
 .mind
@@ -101,9 +111,9 @@
 	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Gnome_Child.png);
 }
 
-.friend
+.modalt
 {
-	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Helper.png);
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Gnome_Elder.png);
 }
 
 .warlock
