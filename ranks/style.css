@@ -82,28 +82,46 @@
 	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Beast.png);
 }
 
-@keyframes sotw
+@keyframes combat
 {
 	0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Attacker.png) }
-	6.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Enforcer.png) }
-	13.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Defender.png) }
-	20% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Ranger.png) }
-	26.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Priest.png) }
-	33.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Magician.png) }
-	40% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Runecrafter.png) }
-	46.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Medic.png) }
-	53.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Crafter.png) }
-	60% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Miner.png) }
-	66.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Smith.png) }
-	73.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Fisher.png) }
-	80% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Cook.png) }
-	86.67% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Firemaker.png) }
-	93.33% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Lumberjack.png) }
+	14.2857% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Enforcer.png) }
+	28.5714% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Defender.png) }
+	42.8571% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Ranger.png) }
+	57.1429% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Priest.png) }
+	71.4286% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Magician.png) }
+	85.7143% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Medic.png) }
 }
 
-.sotw
+.combat
 {
-	animation: sotw 10s step-start infinite;
+	animation: combat 7s step-start infinite;
+}
+
+@keyframes gather
+{
+	0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Miner.png) }
+	33.3333% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Fisher.png) }
+	66.6667% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Lumberjack.png) }
+}
+
+.gather
+{
+	animation: gather 3s step-start infinite;
+}
+
+@keyframes process
+{
+	0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Runecrafter.png) }
+	20% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Crafter.png) }
+	40% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Smith.png) }
+	60% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Cook.png) }
+	80% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Firemaker.png) }
+}
+
+.process
+{
+	animation: process 5s step-start infinite;
 }
 
 .alt
