@@ -98,30 +98,21 @@
 	animation: combat 7s step-start infinite;
 }
 
-@keyframes gather
+@keyframes skill
 {
 	0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Miner.png) }
-	33.3333% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Fisher.png) }
-	66.6667% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Lumberjack.png) }
+	12.5% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Fisher.png) }
+	25% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Lumberjack.png) }
+	37.5% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Runecrafter.png) }
+	50% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Crafter.png) }
+	62.5% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Smith.png) }
+	75% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Cook.png) }
+	87.5% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Firemaker.png) }
 }
 
-.gather
+.skill
 {
-	animation: gather 3s step-start infinite;
-}
-
-@keyframes process
-{
-	0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Runecrafter.png) }
-	20% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Crafter.png) }
-	40% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Smith.png) }
-	60% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Cook.png) }
-	80% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Firemaker.png) }
-}
-
-.process
-{
-	animation: process 5s step-start infinite;
+	animation: skill 8s step-start infinite;
 }
 
 .alt
