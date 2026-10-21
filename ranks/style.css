@@ -82,6 +82,11 @@
 	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Beast.png);
 }
 
+.wrath
+{
+	background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Wrath.png);
+}
+
 @keyframes combat
 {
 	0%, 100% { background-image: url(https://oldschool.runescape.wiki/images/Clan_icon_-_Attacker.png) }
